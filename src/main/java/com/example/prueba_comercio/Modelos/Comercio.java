@@ -26,7 +26,7 @@ public class Comercio {
     private String nombre;
 
     @OneToMany(mappedBy = "comercio", cascade = CascadeType.ALL)
-    private Set<Compra> compras = new HashSet<>(); //Creando la lusta de liobros de la biblioteca HashSet<>()
+    private Set<Compra> compras = new HashSet<>();
 
     public Set<Compra> getCompras() {
         return compras;
